@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>История города Тореза</title>
+    <style>
+      .head {
+        font-size: 100%;
+        font-family: Arial;
+        font-size: 18px;
+        color: #333366;
+        text-align: center;
+      }
+      body {
+        background-color: #efefefef;
+      }
+      footer {
+        text-align: center;
+      }
+      .my_buttom {
+        margin: 30px;
+        text-align: center;
+      }
+      .button {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial;
+        border-color: #ff9090;
+        padding: 5px 10px;
+        color: #6e2c2c;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 1px solid #a64747;
+        border-top-color: #ee6969;
+        border-bottom: 4px solid #800000;
+      }
+      .button:hover {
+        background-color: #f67878;
+      }
+      .cover {
+        text-align: center;
+        background: #ccc;
+        width: 700px;
+        margin: auto;
+      }
+      h2.contact {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 100px;
+        font-family: Arial;
+        color: #0f0a4d;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+      p.contact {
+        font-size: 24px;
+        margin-bottom: 15px;
+        line-height: 36px;
+        font-family: Arial;
+        color: #4b4b4b;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+      #contact {
+        margin-bottom: 0px;
+      }
+      input[type="text"] {
+        width: 300px;
+      }
+
+      textarea {
+        width: 600px;
+        height: 275px;
+      }
+
+      label {
+        color: #791717;
+      }
+
+      input,
+      textarea {
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 5px solid rgba(122, 192, 0, 0.15);
+        padding: 10px;
+        font-family: Keffeesatz, Arial;
+        color: #4b4b4b;
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: -10px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 5px solid #180e08;
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      input[type="submit"] {
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        background-color: #85ce07;
+        padding: 5px 36px 8px 36px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        border-top: 1px solid rgba(255, 255, 255, 0.6);
+      }
+
+      input[type="submit"]:hover {
+        color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        background-color: #f15608;
+      }
+      input[type="submit"]:active {
+        top: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1>Город Торез</h1>
+        <p>
+          <img
+            src="images/Torez.jpg"
+            alt="Здесь должна быть картинка"
+            width="720"
+          />
+        </p>
+      </div>
+      <div id="menu">
+        <nav class="my_buttom" id="button">
+          <a class="button" href="index.html" id="index">Главная</a>
+          <a class="button" href="history.html" id="history">История</a>
+          <a class="button" href="infrastructure.html" id="infrastructure"
+            >Инфраструктура</a
+          >
+          <a class="button" href="culture_and_art.html" id="culture_and_art"
+            >Культура и искусство</a
+          >
+          <a class="button" href="contact.html" id="contact">Обратная связь</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="cover">
+      <h2 class="contact">Обратная связь!</h2>
+      <form id="contactform">
+        <p class="contact"><label for="name">Имя</label></p>
+        <input
+          id="name"
+          name="name"
+          placeholder="Ваше имя"
+          required=""
+          tabindex="1"
+          type="text"
+        />
+
+        <p class="contact"><label for="email">Email</label></p>
+        <input
+          id="email"
+          name="email"
+          placeholder="Ваша почта"
+          required=""
+          tabindex="2"
+          type="email"
+        />
+
+        <p class="contact"><label for="subject">Тема</label></p>
+        <input
+          id="subject"
+          name="subject"
+          placeholder="Тема сообщения"
+          required=""
+          tabindex="2"
+          type="text"
+        />
+
+        <p class="contact"><label for="comment">Сообщение</label></p>
+        <textarea
+          name="comment"
+          id="comment"
+          required=""
+          tabindex="4"
+        ></textarea>
+        <br />
+        <input
+          name="submit"
+          id="submit"
+          tabindex="5"
+          value="Отправить"
+          type="submit"
+        />
+      </form>
+    </div>
+    <footer>
+      <div class="footer-bg">
+        <div class="copyright">
+          <p><strong>Сайт «История города Тореза»</strong></p>
+          <p>&copy; Мишуров Максим 2021</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
